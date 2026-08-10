@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Ghala — My Everything</title>
+<style>
+:root{--bg:#07050a;--card:rgba(255,255,255,.075);--line:rgba(255,255,255,.14);--pink:#ff6fae;--gold:#e8c878;--text:#fff8fb;--muted:#d8c5ce}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 0%,#3a1027 0,#120812 30%,#07050a 70%);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.025),transparent 65%);z-index:2}
+.wrap{max-width:1050px;margin:auto;padding:0 20px 80px}.hero{min-height:92vh;display:grid;place-items:center;text-align:center;position:relative}.hero-inner{max-width:780px}.eyebrow{letter-spacing:5px;text-transform:uppercase;color:var(--gold);font-size:12px}.hero h1{font-family:Georgia,serif;font-size:clamp(58px,13vw,130px);line-height:.9;margin:20px 0;background:linear-gradient(120deg,#fff,#ffd4e6 45%,#e8c878);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:19px;color:var(--muted);line-height:1.8}.btn{display:inline-flex;margin-top:22px;padding:15px 28px;border-radius:999px;text-decoration:none;color:#180812;background:linear-gradient(120deg,#fff,#ffd3e4,#e8c878);font-weight:800;box-shadow:0 12px 35px rgba(255,111,174,.25);border:0;cursor:pointer;font-size:15px}
+.section{padding:70px 0}.title{text-align:center;margin-bottom:35px}.title span{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:11px}.title h2{font-family:Georgia,serif;font-size:42px;margin:10px 0}.letter{background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:28px;padding:35px;box-shadow:0 25px 80px rgba(0,0,0,.35);line-height:2;font-size:18px;color:#f8eaf0}
+.quote{text-align:center;font-family:Georgia,serif;font-size:30px;line-height:1.5;color:#ffe1eb;padding:30px 10px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.photo{position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:#111;min-height:250px}.photo img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s}.photo:hover img{transform:scale(1.045)}.photo.tall{grid-row:span 2}.caption{position:absolute;bottom:0;left:0;right:0;padding:45px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini{padding:25px;border:1px solid var(--line);border-radius:22px;background:var(--card);text-align:center}.mini b{display:block;color:var(--gold);font-size:27px;margin-bottom:8px}.mini p{color:var(--muted);line-height:1.7;margin:0}
+.secret{display:none;margin-top:25px;padding:25px;border-radius:20px;background:rgba(255,111,174,.09);border:1px solid rgba(255,111,174,.25);line-height:2;color:#ffe9f1;text-align:center}
+footer{text-align:center;padding:50px 0 10px;color:#a9909b;font-size:13px}
+@media(max-width:700px){.gallery{grid-template-columns:1fr}.photo.tall{grid-row:auto}.cards{grid-template-columns:1fr}.letter{padding:25px}.hero{min-height:80vh}.section{padding:48px 0}.title h2{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">A little world made for you</div>
+    <h1>Ghala</h1>
+    <p>My favorite person. My happiness. My home in this life.<br>Every beautiful memory feels better because you're in it.</p>
+    <a class="btn" href="#letter">Enter our story ♡</a>
+  </div>
+</section>
+
+<section class="section" id="letter">
+  <div class="title"><span>From my heart</span><h2>A letter to you</h2></div>
+  <div class="letter">
+    Ghala, I don't think words will ever be enough to explain how happy I am that you're in my life.
+    Your presence changed the way my days feel. Even the smallest moments become special when I know
+    they're connected to you. I'm grateful for every conversation, every laugh, every memory, and every
+    little detail that made you become such a beautiful part of my world.<br><br>
+    I love you more than I can fit into a message. And one of my biggest dreams is to see your dreams
+    come true — to stand beside you, celebrate your victories, support you when things get hard, and
+    experience all the things you've always wanted to experience.<br><br>
+    I don't just want memories with you. I want a lifetime full of them. I want the ordinary days,
+    the adventures, the late-night talks, the laughter, the quiet moments, and all the little things
+    that one day we'll look back on and smile about.<br><br>
+    You are one of the most precious gifts life has given me, and I'm thankful that I get to call you
+    my love. If I could choose one thing again and again, I'd choose having you in my life.
+  </div>
+</section>
+
+<section class="section">
+  <div class="title"><span>Our memories</span><h2>Moments I want to keep</h2></div>
+  <div class="gallery">
+    <div class="photo tall"><img src="images/memory1.jpeg"><div class="caption">Peace feels like being close to you.</div></div>
+    <div class="photo"><img src="images/memory2.jpeg"><div class="caption">King & Queen — our little universe.</div></div>
+    <div class="photo"><img src="images/memory3.jpeg"><div class="caption">Just you, me, and our favorite games.</div></div>
+    <div class="photo"><img src="images/memory4.jpeg"><div class="caption">Dancing through life together.</div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title"><span>Why you matter</span><h2>You are my favorite part</h2></div>
+  <div class="cards">
+    <div class="mini"><b>♡</b><p>You make ordinary days feel special.</p></div>
+    <div class="mini"><b>∞</b><p>I want to make memories with you that last forever.</p></div>
+    <div class="mini"><b>✦</b><p>Your happiness will always mean so much to me.</p></div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center">
+  <div class="title"><span>Just for you</span><h2>One last message</h2></div>
+  <button class="btn" onclick="document.getElementById('secret').style.display='block';this.style.display='none'">Open my secret message ♡</button>
+  <div id="secret" class="secret">
+    Ghala, if I could give you one thing, I'd give you the ability to see yourself through my eyes —
+    because then you'd understand just how precious you are to me.<br><br>
+    I hope I get to be beside you for every dream, every adventure, every smile and every new chapter.
+    You are not just a part of my story. You are one of my favorite reasons for writing it. ♡
+  </div>
+</section>
+
+<footer>Made with love, especially for Ghala ♡</footer>
+</div>
+</body>
+</html>
