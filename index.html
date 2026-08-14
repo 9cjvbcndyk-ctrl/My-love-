@@ -3,176 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أحمد | أفضل أخ في العالم</title>
+<title>إلى غلا ❤️</title>
 <style>
 *{box-sizing:border-box}
-body{
-  margin:0;
-  min-height:100vh;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;
-  background:
-    radial-gradient(circle at 20% 10%,rgba(255,255,255,.10),transparent 25%),
-    radial-gradient(circle at 80% 90%,rgba(255,255,255,.08),transparent 25%),
-    linear-gradient(135deg,#080b12,#111827 50%,#05070c);
-  color:#f5f7fb;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:24px;
-  overflow-x:hidden;
-}
-.container{width:min(900px,100%)}
-.card{
-  position:relative;
-  overflow:hidden;
-  background:rgba(15,20,31,.82);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:30px;
-  padding:42px 28px;
-  box-shadow:0 25px 80px rgba(0,0,0,.45);
-  backdrop-filter:blur(14px);
-}
-.card:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.05),transparent 65%);
-  pointer-events:none;
-}
-.badge{
-  display:inline-block;
-  padding:9px 16px;
-  border:1px solid rgba(255,255,255,.18);
-  border-radius:999px;
-  color:#d9dee8;
-  font-size:14px;
-  letter-spacing:.5px;
-}
-h1{
-  font-size:clamp(46px,10vw,86px);
-  margin:18px 0 4px;
-  line-height:1;
-  background:linear-gradient(90deg,#fff,#cbd5e1,#fff);
-  -webkit-background-clip:text;
-  color:transparent;
-}
-.subtitle{font-size:20px;color:#aeb8c8;margin:0 0 30px}
-.hero{
-  padding:28px 22px;
-  border-radius:24px;
-  background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
-  border:1px solid rgba(255,255,255,.09);
-}
-.quote{
-  font-size:clamp(22px,5vw,34px);
-  line-height:1.65;
-  font-weight:700;
-  margin:0;
-}
-.highlight{color:#fff}
-.gold{color:#d9b86c}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin:20px 0;
-}
-.box{
-  padding:20px 14px;
-  border-radius:20px;
-  background:#0b1019;
-  border:1px solid rgba(255,255,255,.09);
-  text-align:center;
-}
-.number{font-size:32px;font-weight:800;color:#e7c978}
-.label{color:#9ba6b7;margin-top:5px;font-size:14px}
-.message{
-  margin-top:18px;
-  line-height:2;
-  color:#c7cfdb;
-  font-size:18px;
-}
-button{
-  margin-top:25px;
-  width:100%;
-  border:0;
-  border-radius:17px;
-  padding:17px 20px;
-  font-size:17px;
-  font-weight:700;
-  color:#0b0d12;
-  background:linear-gradient(90deg,#d8b766,#f1d992);
-  cursor:pointer;
-  box-shadow:0 10px 30px rgba(216,183,102,.18);
-}
-#secret{
-  display:none;
-  margin-top:18px;
-  padding:20px;
-  border-radius:18px;
-  background:rgba(216,183,102,.08);
-  border:1px solid rgba(216,183,102,.25);
-  line-height:1.9;
-  color:#f2e7c5;
-}
-.footer{text-align:center;color:#697386;font-size:13px;margin-top:24px}
-@media(max-width:650px){
- .grid{grid-template-columns:1fr}
- .card{padding:30px 18px}
-}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#fff 0%,#ffe6f0 50%,#fff 100%);color:#3b2030;overflow-x:hidden}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;font-size:22px;animation:float 8s linear infinite;opacity:.45}
+@keyframes float{0%{transform:translateY(110vh) rotate(0deg);opacity:0}15%{opacity:.5}100%{transform:translateY(-15vh) rotate(360deg);opacity:0}}
+main{position:relative;z-index:1;max-width:900px;margin:auto;padding:28px 18px 60px}
+.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.card{background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border:1px solid rgba(255,105,150,.25);border-radius:30px;padding:38px 24px;box-shadow:0 20px 60px rgba(150,50,90,.15)}
+.badge{display:inline-block;background:#fff0f5;color:#d94b7a;border-radius:999px;padding:8px 16px;font-size:14px;margin-bottom:16px}
+h1{font-size:clamp(42px,10vw,82px);margin:0 0 12px;color:#d9366f;text-shadow:0 5px 20px rgba(217,54,111,.15)}
+h2{font-size:28px;margin:12px 0;color:#a72d59}
+p{line-height:2;font-size:18px}
+.big{font-size:23px;font-weight:bold}
+.btn{border:0;background:linear-gradient(135deg,#e83f78,#b92e60);color:#fff;padding:14px 24px;border-radius:999px;font-size:17px;cursor:pointer;box-shadow:0 10px 25px rgba(185,46,96,.25);margin-top:10px}
+.section{margin:28px 0}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:20px}
+.reason{background:#fff;border-radius:22px;padding:20px;text-align:center;box-shadow:0 10px 30px rgba(150,50,90,.08)}
+.reason span{font-size:34px}
+.final{margin-top:28px;text-align:center;padding:34px 20px;border-radius:28px;background:linear-gradient(135deg,#fff,#ffe5ef)}
+#secret{display:none;margin-top:18px;padding:18px;border-radius:18px;background:#fff0f6;color:#9d2855;font-weight:bold}
+footer{text-align:center;color:#a56a82;margin-top:30px;font-size:14px}
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="card">
-    <span class="badge">إلى أخوي أحمد • ٢٧ سنة</span>
-
-    <h1>أحمد</h1>
-    <p class="subtitle">مو بس أخ… أنت سند وفخر ونعمة كبيرة ❤️</p>
-
-    <section class="hero">
-      <p class="quote">
-        إلى <span class="gold">أفضل أخ في العالم</span>…<br>
-        وجودك في حياتي شيء ما ينقاس بأي كلام.
-      </p>
-      <p class="message">
-        يا أحمد، يمكن ما أقولها لك كل يوم، لكن والله إني أفتخر فيك.
-        أنت الأخ اللي الواحد يسند عليه، واللي وجوده يعطي للحياة معنى أجمل.
-        عمر الـ٢٧ ما هو مجرد رقم؛ هو ٢٧ سنة من المواقف والذكريات والضحك
-        والأيام اللي خلتك شخص غالي ومميز بشكل ما يتكرر.
-      </p>
-    </section>
-
-    <div class="grid">
-      <div class="box"><div class="number">٢٧</div><div class="label">سنة من العمر</div></div>
-      <div class="box"><div class="number">١</div><div class="label">أخ ما يتكرر</div></div>
-      <div class="box"><div class="number">∞</div><div class="label">محبة وفخر</div></div>
-    </div>
-
-    <section class="hero">
-      <p class="message">
-        أحمد، أتمنى لك في كل سنة جاية نجاح أكبر، وراحة أكثر، وفرحة ما تنتهي.
-        وأتمنى مهما كبرت السنين تظل بنفس قلبك، لأن هذا الشيء هو اللي يخليك
-        <span class="highlight">أفضل أخ في العالم</span>.
-        الله يخليك لنا ويحفظك، ويكتب لك أيام تليق بقلبك وطموحك.
-      </p>
-      <button onclick="showMessage()">اضغط هنا يا أحمد 👑</button>
-      <div id="secret">
-        رسالة خاصة لك: <strong>أنا محظوظ جدًا إنك أخوي.</strong><br>
-        مهما حاولت أوصف مكانتك، الكلام بيظل أقل من اللي تستحقه.
-        أحبك يا أخوي، وفخور فيك اليوم وكل يوم. ❤️
-      </div>
-    </section>
-
-    <div class="footer">صُنعت بحب لأحمد • أفضل أخ في العالم</div>
-  </div>
+<div class="hearts" id="hearts"></div>
+<main>
+<section class="hero">
+<div class="card">
+<div class="badge">رسالة من محمد إلى غلا ❤️</div>
+<h1>غلا</h1>
+<p class="big">أنتِ مو بس حبيبتي… أنتِ الإنسانة اللي أبيها تكون معي في كل عمري.</p>
+<p>فتحتِ هذا الموقع؟ أجل لازم تعرفين شيء واحد: بالنسبة لي، أنتِ أفضل إنسانة عرفتها، وأغلى حبيبة، وأجمل زوجة أتمنى أكمل معها حياتي.</p>
+<button class="btn" onclick="showSecret()">اضغطي هنا يا أجمل غلا 💗</button>
+<div id="secret">وعد مني: مهما كبرت الأيام وتغيّرت الظروف، مكانك بقلبي له شيء واحد فقط… أنتِ. ❤️</div>
 </div>
+</section>
 
+<section class="section card">
+<h2>ليش أنتِ مختلفة؟</h2>
+<div class="reasons">
+<div class="reason"><span>❤️</span><h3>أفضل حبيبة</h3><p>لأن وجودك بحياتي يخلّي كل يوم له معنى أجمل.</p></div>
+<div class="reason"><span>💍</span><h3>أفضل زوجة</h3><p>أشوفك شريكة عمري، والإنسانة اللي أتمنى أشاركها كل تفاصيل حياتي.</p></div>
+<div class="reason"><span>🌷</span><h3>أفضل إنسانة</h3><p>أحب قلبك وروحك وطريقتك، مو بس جمالك.</p></div>
+<div class="reason"><span>🏠</span><h3>بيتي وراحتي</h3><p>أنتِ الشخص اللي أتمنى أرجع له مهما كان يومي طويل.</p></div>
+</div>
+</section>
+
+<section class="final">
+<h2>وغلا… إذا سألتي محمد وش مكانك؟</h2>
+<p class="big">مكانك مو بين الناس… مكانك بقلبي، وفي مستقبلي، وفي كل أمنية أتمنى تتحقق. ❤️</p>
+<p>أنا ما أبي قصة حب مؤقتة، أبيك أنتِ في القصة كاملة: اليوم، وبكرة، وكل الأيام اللي بعدها.</p>
+<p class="big">أحبك يا غلا، وأشوفك أفضل حبيبة وأفضل زوجة وأفضل إنسانة في حياتي كلها. ❤️</p>
+</section>
+<footer>صُنع بحب من محمد إلى غلا • 2026 ❤️</footer>
+</main>
 <script>
-function showMessage(){
-  const box=document.getElementById("secret");
-  box.style.display=box.style.display==="block"?"none":"block";
+const box=document.getElementById('hearts');
+for(let i=0;i<28;i++){
+ const h=document.createElement('div'); h.className='heart'; h.textContent=['❤️','💗','💕','🌸'][i%4];
+ h.style.left=Math.random()*100+'%';
+ h.style.animationDelay=(Math.random()*8)+'s';
+ h.style.fontSize=(16+Math.random()*18)+'px';
+ box.appendChild(h);
 }
+function showSecret(){document.getElementById('secret').style.display='block'}
 </script>
 </body>
 </html>
