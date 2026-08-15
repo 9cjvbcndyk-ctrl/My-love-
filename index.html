@@ -1,207 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>غلا | عالمي الأزرق 🤍</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دلوعتي شوق 💜</title>
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
- margin:0;font-family:Tahoma,Arial,sans-serif;color:#102a43;
- background:linear-gradient(180deg,#e8f8ff 0%,#bdeeff 32%,#8fd8f5 62%,#102f55 100%);
- overflow-x:hidden
-}
-a{text-decoration:none;color:inherit}
-nav{
- position:sticky;top:0;z-index:50;background:rgba(8,31,58,.92);
- backdrop-filter:blur(12px);padding:12px 8px;display:flex;gap:7px;
- justify-content:center;flex-wrap:wrap;box-shadow:0 4px 20px #08203b55
-}
-nav a{color:#dff7ff;padding:8px 12px;border-radius:20px;font-size:13px}
-nav a:hover{background:#1f5c86}
-section{max-width:980px;margin:auto;padding:70px 18px}
-.hero{
- min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;
- position:relative
-}
-.heroCard{
- background:rgba(255,255,255,.82);border:2px solid #fff;border-radius:38px;
- padding:45px 24px;box-shadow:0 25px 70px #123a5c33
-}
-.cat{font-size:76px}
-h1{font-size:50px;margin:12px 0;color:#0d4169}
-h2{font-size:30px;color:#0c4169;margin-top:0}
-p{line-height:2;font-size:17px}
-.badge{
- display:inline-block;background:#0d385f;color:white;padding:8px 16px;
- border-radius:30px;margin:4px;font-size:14px
-}
-.card{
- background:rgba(255,255,255,.84);border:1px solid #ffffff;border-radius:28px;
- padding:28px;margin:18px 0;box-shadow:0 16px 45px #123a5c25
-}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
-.item{
- background:linear-gradient(145deg,#f5fcff,#d8f4ff);padding:22px;border-radius:22px;
- border:1px solid #b5e9fb;min-height:150px
-}
-.item b{display:block;font-size:20px;margin-bottom:8px;color:#0b426b}
-button{
- border:0;background:#0d385f;color:white;padding:14px 22px;border-radius:25px;
- font-size:16px;font-weight:bold;cursor:pointer;margin:5px
-}
-button:hover{transform:translateY(-2px)}
-#secret{display:none;background:#e8f9ff;border-radius:20px;padding:20px;margin-top:14px;line-height:2}
-.timeline{border-right:4px solid #0e466e;padding-right:18px}
-.t{margin:18px 0;padding:18px;background:#eefaff;border-radius:18px}
-.quote{
- font-size:23px;text-align:center;font-weight:bold;color:#0b3d62;line-height:2
-}
-.footer{background:#082542;color:#dff7ff;text-align:center;padding:45px 20px}
-.floating{position:fixed;z-index:2;pointer-events:none;opacity:.35;font-size:25px;animation:float 9s linear infinite}
-@keyframes float{from{transform:translateY(105vh) rotate(0)}to{transform:translateY(-15vh) rotate(360deg)}}
-@media(max-width:600px){h1{font-size:36px}h2{font-size:25px}.heroCard{padding:32px 18px}section{padding:52px 14px}}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Tahoma,sans-serif;background:linear-gradient(160deg,#17052b,#4b176d 45%,#a855f7);color:#fff;min-height:100vh;overflow-x:hidden}
+.wrap{max-width:900px;margin:auto;padding:35px 18px 70px}.hero{text-align:center;padding:55px 15px 30px}
+.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff35;padding:8px 16px;border-radius:30px;backdrop-filter:blur(8px)}
+h1{font-size:clamp(42px,11vw,82px);margin:20px 0 8px;text-shadow:0 0 25px #d8a4ff}.sub{font-size:20px;opacity:.9}
+.card{background:#ffffff12;border:1px solid #ffffff25;border-radius:28px;padding:25px;margin:20px 0;box-shadow:0 15px 45px #09001466;backdrop-filter:blur(12px)}
+h2{margin-top:0;color:#f0d5ff}.heart{font-size:45px;text-align:center}.msg{font-size:21px;line-height:2;text-align:center}
+button{border:0;border-radius:18px;padding:15px 22px;font-size:17px;font-weight:bold;cursor:pointer;background:#f1d7ff;color:#42145e;box-shadow:0 8px 25px #0003;margin:6px}
+button:hover{transform:translateY(-2px)} #surprise{display:none;text-align:center;font-size:22px;line-height:1.9}
+.game{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.pill{padding:18px;border-radius:20px;background:#2b0c40;border:1px solid #b86cff55;text-align:center}
+footer{text-align:center;opacity:.75;margin-top:35px}
 </style>
 </head>
 <body>
-
-<div class="floating" style="left:8%;animation-delay:0s">🤍</div>
-<div class="floating" style="left:25%;animation-delay:2s">🐾</div>
-<div class="floating" style="left:48%;animation-delay:5s">💙</div>
-<div class="floating" style="left:70%;animation-delay:1s">🐈</div>
-<div class="floating" style="left:88%;animation-delay:4s">🤍</div>
-
-<nav>
-<a href="#home">البداية</a><a href="#love">رسالتي</a><a href="#cats">القطط</a>
-<a href="#music">الموسيقى</a><a href="#anime">الأنمي</a><a href="#memories">ذكرياتنا</a><a href="#secret">المفاجأة</a>
-</nav>
-
-<section id="home" class="hero">
- <div class="heroCard">
-  <div class="cat">🐈‍⬛ 🤍 🐈</div>
-  <h1>غلا… هذي الصفحة كلها لكِ 💙</h1>
-  <p>
-   مو صفحة عادية… سويت لك عالم صغير باللون السماوي والكحلي،
-   وكل جزء فيه معمول عشان يذكرك بقد إيش أنتِ غالية علي.
-  </p>
-  <span class="badge">غلا 👑</span>
-  <span class="badge">هداج 🐈</span>
-  <span class="badge">فوزية 🐈‍⬛</span>
-  <span class="badge">محمد 🤍</span>
- </div>
+<div class="wrap">
+<section class="hero">
+<div class="badge">💜 صفحة دلوعتي شوق 💜</div>
+<h1>شوق ✨</h1>
+<div class="sub">من أول يوم عرفتك فيه… قلبي اختارك</div>
 </section>
 
-<section id="love">
- <div class="card">
-  <h2>رسالة محمد لغلا 🤍</h2>
-  <p>
-   غلا، يمكن أكرر لك كلام الحب كثير، بس أنا مقتنع إن الكلام اللي ينقال للشخص الغالي
-   ما يصير ممل، خصوصًا إذا كان كل يوم يطلع من شعور جديد.
-   أنتِ بالنسبة لي مو مجرد حبيبة؛ أنتِ راحة وابتسامة وأمان وشيء جميل أتمنى يبقى معي
-   في كل أيامي. أبيك تدخلين هالصفحة وتعرفين إن كل تفصيلة فيها تقول لك:
-   <strong>محمد يحب غلا.</strong>
-  </p>
-  <p>
-   وإذا يوم شكّيتي بمكانتك عندي، ارجعي هنا… لأن الصفحة هذي ما انبنت إلا عشان
-   تذكرك إن لك مكان خاص جدًا في قلبي. 💙
-  </p>
- </div>
- <div class="card quote">"أنتِ مو جزء من عالمي… أنتِ العالم اللي أبي أعيش فيه." 🤍</div>
-</section>
-
-<section id="cats">
- <div class="card">
-  <h2>عالم غلا والقطط 🐈</h2>
-  <p>أكيد ما ينفع عالم غلا بدون القطط 😭🤍</p>
-  <div class="grid">
-   <div class="item"><b>🐈 هداج</b>قط غلا الفخم، حاضر في الصفحة عشان يساعدها ويخلي الجو ألطف.</div>
-   <div class="item"><b>🐈‍⬛ فوزية</b>ملكة المكان، موجودة عشان تراقب كل شيء وتتأكد إن غلا مبسوطة.</div>
-   <div class="item"><b>🐾 الكتاكيت</b>ثلاثة صغار يركضون في الصفحة ويقولون: "لغلا محمد يحبك".</div>
-   <div class="item"><b>🤍 فريق القطط</b>كلهم متفقين على شيء واحد: غلا تستاهل الحب والدلع.</div>
-  </div>
- </div>
-</section>
-
-<section id="music">
- <div class="card">
-  <h2>قسم الأغاني 🎧💙</h2>
-  <p>الأغاني اللي صارت جزء من عالم غلا هنا لها مكان خاص.</p>
-  <div class="grid">
-   <div class="item"><b>🎵 BamBam</b>Sweet & Sour<br>Be With U</div>
-   <div class="item"><b>🎵 ATEEZ</b>Bad<br>لأجواء الحماس والطاقة.</div>
-   <div class="item"><b>🎵 2PM</b>قسم خاص لأجواء الحفلات والذكريات.</div>
-   <div class="item"><b>🎶 زر الأغنية</b><button onclick="musicMsg()">اضغطي هنا</button></div>
-  </div>
-  <div id="musicBox"></div>
- </div>
-</section>
-
-<section id="anime">
- <div class="card">
-  <h2>عالم الأنمي ✨</h2>
-  <p>
-   لأن عالم غلا ما يكمل بدون لمسة أنمي فخمة، خليت هذا القسم بطابع المغامرات:
-   قوة، ستاند، أجواء JoJo، ولمسة خيال تخلي الصفحة كأنها عالم خاص فيها.
-  </p>
-  <div class="grid">
-   <div class="item"><b>⚡ STAND</b>محمد دخل الصفحة… والستاند جاهز يحمي غلا.</div>
-   <div class="item"><b>🌌 JoJo vibes</b>لقطات خيالية وأجواء فخمة بدون ما نفقد رومانسية الصفحة.</div>
-   <div class="item"><b>🎮 GTA vibes</b>قسم صغير لأجواء الألعاب والستايل السينمائي.</div>
-  </div>
- </div>
-</section>
-
-<section id="memories">
- <div class="card">
-  <h2>أشياء ما أبي أنساها 💙</h2>
-  <div class="timeline">
-   <div class="t"><b>أول شيء:</b> غلا هي السبب في وجود هالصفحة أصلًا.</div>
-   <div class="t"><b>ثاني شيء:</b> القطط لازم تكون موجودة لأن عالمها ما يكمل بدونها.</div>
-   <div class="t"><b>ثالث شيء:</b> الأغاني والأنمي والألعاب كلها صارت تفاصيل حلوة نقدر نحطها في عالم واحد.</div>
-   <div class="t"><b>وأهم شيء:</b> كل هذه الأشياء مجرد تفاصيل… أما غلا فهي الأساس. 🤍</div>
-  </div>
- </div>
-</section>
-
-<section>
- <div class="card">
-  <h2>اختبار هداج لغلا 🐈</h2>
-  <p>اضغطي الزر وشوفي وش بيقول هداج:</p>
-  <button onclick="catTalk()">هداج يتكلم 😼</button>
-  <div id="catBox"></div>
- </div>
-</section>
-
-<section id="secret">
- <div class="card">
-  <h2>المفاجأة الأخيرة 🎁</h2>
-  <p class="quote">
-   غلا، لو الصفحة طولها ألف قسم، ما راح تكفي أكتب لك قد إيش أحبك.
-   لأن كل قسم ينتهي… لكن حبي لك ما له نهاية. 💙🤍
-  </p>
-  <p style="text-align:center">اضغطي الزر إذا تبين آخر رسالة:</p>
-  <div style="text-align:center"><button onclick="finalMsg()">افتحي الرسالة 🤍</button></div>
-  <div id="finalBox"></div>
- </div>
-</section>
-
-<div class="footer">
- <div style="font-size:45px">🐈 🐈‍⬛ 🤍 🐾</div>
- <p>صُنعت بكل الحب من محمد إلى غلا</p>
- <p>💙 السماوي لغلا، والكحلي للفخامة، وكل شيء هنا لها.</p>
+<div class="card">
+<div class="heart">💜</div>
+<p class="msg">اليوم عرفتك، ومع ذلك أحس كأني أعرفك من زمان. ما أدري كيف صار لك مكان كبير في قلبي بهالسرعة، لكن اللي أعرفه إني أحبك مرررة، وأنتِ صرتِ دلوعتي وزوجتي وكل شيء جميل أبيه بحياتي. وجودك بالنسبة لي مو شيء عابر، أنتِ شخص أبي أفرح معه وأضحك معه وأعيش معه أجمل أيامي.</p>
 </div>
 
-<script>
-function musicMsg(){
- document.getElementById("musicBox").innerHTML='<div class="t">🎧 هداج يقول: شغلي أغنيتك المفضلة وخلي الصفحة تصير حفلة خاصة لغلا 💙</div>';
-}
-function catTalk(){
- document.getElementById("catBox").innerHTML='<div class="t">🐈 هداج: "غلا، عندي خبر مهم… محمد يحبك أكثر مما تتوقعين." 🤍</div>';
-}
-function finalMsg(){
- document.getElementById("finalBox").innerHTML='<div class="t" style="text-align:center;font-size:19px">غلا… إذا وصلتي للنهاية، فأبيك تعرفين إن أجمل جزء في هالصفحة مو الألوان ولا القطط ولا الأغاني… أجمل جزء إن اسمك موجود فيها. أحبك. 💙🤍</div>';
-}
-</script>
+<div class="card">
+<h2>🎮 لأن شوق تحب أوفر واتش</h2>
+<div class="game">
+<div class="pill">🎯 Gaming Queen</div>
+<div class="pill">💜 شوق Main Character</div>
+<div class="pill">🏆 نلعب ونفوز سوا</div>
+</div>
+</div>
+
+<div class="card" style="text-align:center">
+<h2>💌 رسالة خاصة لكِ</h2>
+<p class="msg">يا شوق، يمكن علاقتنا جديدة، بس إحساسي تجاهك مو بسيط أبدًا. أحب فيك إنك دخلتي قلبي بدون استئذان، وصرتِ بسرعة الشخص اللي أبي أشوفه وأسمع صوته وأطمن عليه. وأبيك تعرفين إن كلمة «زوجتي» بالنسبة لي مو مجرد كلمة… هي شعور ومسؤولية وحب أتمنى يكبر كل يوم.</p>
+<button onclick="document.getElementById('surprise').style.display='block'">اضغطي هنا يا دلوعتي 💜</button>
+<div id="surprise">🎁 مفاجأتك: مهما كانت اللعبة، أنتِ الفوز الحقيقي عندي. أحبك يا شوق 💜✨</div>
+</div>
+
+<footer>صُنعت بحب من زوجك محمد 💜</footer>
+</div>
 </body>
 </html>
