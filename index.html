@@ -3,73 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>إلى غلا ❤️</title>
+<title>لغلا 🤍</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#fff 0%,#ffe6f0 50%,#fff 100%);color:#3b2030;overflow-x:hidden}
+body{
+  margin:0;font-family:Tahoma,Arial,sans-serif;
+  background:linear-gradient(135deg,#fff 0%,#fff5fa 48%,#ffe7f1 100%);
+  color:#4a2636;min-height:100vh;overflow-x:hidden;
+}
 .hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
 .heart{position:absolute;font-size:22px;animation:float 8s linear infinite;opacity:.45}
-@keyframes float{0%{transform:translateY(110vh) rotate(0deg);opacity:0}15%{opacity:.5}100%{transform:translateY(-15vh) rotate(360deg);opacity:0}}
-main{position:relative;z-index:1;max-width:900px;margin:auto;padding:28px 18px 60px}
-.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center}
-.card{background:rgba(255,255,255,.82);backdrop-filter:blur(12px);border:1px solid rgba(255,105,150,.25);border-radius:30px;padding:38px 24px;box-shadow:0 20px 60px rgba(150,50,90,.15)}
-.badge{display:inline-block;background:#fff0f5;color:#d94b7a;border-radius:999px;padding:8px 16px;font-size:14px;margin-bottom:16px}
-h1{font-size:clamp(42px,10vw,82px);margin:0 0 12px;color:#d9366f;text-shadow:0 5px 20px rgba(217,54,111,.15)}
-h2{font-size:28px;margin:12px 0;color:#a72d59}
-p{line-height:2;font-size:18px}
-.big{font-size:23px;font-weight:bold}
-.btn{border:0;background:linear-gradient(135deg,#e83f78,#b92e60);color:#fff;padding:14px 24px;border-radius:999px;font-size:17px;cursor:pointer;box-shadow:0 10px 25px rgba(185,46,96,.25);margin-top:10px}
-.section{margin:28px 0}
-.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:20px}
-.reason{background:#fff;border-radius:22px;padding:20px;text-align:center;box-shadow:0 10px 30px rgba(150,50,90,.08)}
-.reason span{font-size:34px}
-.final{margin-top:28px;text-align:center;padding:34px 20px;border-radius:28px;background:linear-gradient(135deg,#fff,#ffe5ef)}
-#secret{display:none;margin-top:18px;padding:18px;border-radius:18px;background:#fff0f6;color:#9d2855;font-weight:bold}
-footer{text-align:center;color:#a56a82;margin-top:30px;font-size:14px}
+@keyframes float{from{transform:translateY(110vh) rotate(0)}to{transform:translateY(-15vh) rotate(360deg)}}
+main{position:relative;z-index:1;max-width:900px;margin:auto;padding:28px 16px 60px}
+.hero{
+  text-align:center;padding:45px 22px 35px;border-radius:30px;
+  background:rgba(255,255,255,.78);box-shadow:0 18px 55px rgba(180,75,120,.16);
+  border:1px solid rgba(255,255,255,.9)
+}
+.cat{font-size:72px;filter:drop-shadow(0 8px 8px rgba(0,0,0,.08))}
+h1{font-size:46px;margin:8px 0;color:#d64d82}
+.subtitle{font-size:18px;line-height:1.9;margin:auto;max-width:650px}
+.card{
+ margin-top:20px;background:rgba(255,255,255,.82);border-radius:26px;padding:25px;
+ box-shadow:0 12px 35px rgba(180,75,120,.12);border:1px solid #ffe1ec
+}
+.card h2{color:#c63f72;margin-top:0}
+.love{font-size:19px;line-height:2.15}
+button{
+ border:0;border-radius:999px;padding:14px 22px;margin:7px;cursor:pointer;
+ background:#e75b8d;color:white;font-size:16px;font-weight:bold;
+ box-shadow:0 8px 18px rgba(231,91,141,.25);transition:.2s
+}
+button:hover{transform:translateY(-2px) scale(1.02)}
+#secret{display:none;margin-top:18px;padding:20px;border-radius:20px;background:#fff0f6;line-height:2}
+.cats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;font-size:44px;margin:12px 0}
+footer{text-align:center;margin-top:28px;font-size:14px;opacity:.7}
 </style>
 </head>
 <body>
-<div class="hearts" id="hearts"></div>
+<div class="hearts">
+  <span class="heart" style="left:8%;animation-delay:0s">🤍</span>
+  <span class="heart" style="left:24%;animation-delay:2s">💗</span>
+  <span class="heart" style="left:47%;animation-delay:4s">💕</span>
+  <span class="heart" style="left:69%;animation-delay:1s">🤍</span>
+  <span class="heart" style="left:88%;animation-delay:5s">💖</span>
+</div>
+
 <main>
 <section class="hero">
-<div class="card">
-<div class="badge">رسالة من محمد إلى غلا ❤️</div>
-<h1>غلا</h1>
-<p class="big">أنتِ مو بس حبيبتي… أنتِ الإنسانة اللي أبيها تكون معي في كل عمري.</p>
-<p>فتحتِ هذا الموقع؟ أجل لازم تعرفين شيء واحد: بالنسبة لي، أنتِ أفضل إنسانة عرفتها، وأغلى حبيبة، وأجمل زوجة أتمنى أكمل معها حياتي.</p>
-<button class="btn" onclick="showSecret()">اضغطي هنا يا أجمل غلا 💗</button>
-<div id="secret">وعد مني: مهما كبرت الأيام وتغيّرت الظروف، مكانك بقلبي له شيء واحد فقط… أنتِ. ❤️</div>
-</div>
+  <div class="cat">🐈</div>
+  <h1>لغلا.. أجمل شيء بحياتي 🤍</h1>
+  <p class="subtitle">
+    سويت لك هالصفحة عشان يكون عندك مكان صغير يجمع جزء من الكلام
+    اللي يمكن أكرره كثير… بس لأن شعوري تجاهك ما يخلص.
+  </p>
+  <div class="cats">🐈 🐈‍⬛ 🐾 🐈 🐾</div>
 </section>
 
-<section class="section card">
-<h2>ليش أنتِ مختلفة؟</h2>
-<div class="reasons">
-<div class="reason"><span>❤️</span><h3>أفضل حبيبة</h3><p>لأن وجودك بحياتي يخلّي كل يوم له معنى أجمل.</p></div>
-<div class="reason"><span>💍</span><h3>أفضل زوجة</h3><p>أشوفك شريكة عمري، والإنسانة اللي أتمنى أشاركها كل تفاصيل حياتي.</p></div>
-<div class="reason"><span>🌷</span><h3>أفضل إنسانة</h3><p>أحب قلبك وروحك وطريقتك، مو بس جمالك.</p></div>
-<div class="reason"><span>🏠</span><h3>بيتي وراحتي</h3><p>أنتِ الشخص اللي أتمنى أرجع له مهما كان يومي طويل.</p></div>
-</div>
+<section class="card">
+  <h2>رسالة من محمد لغلا 💗</h2>
+  <p class="love">
+    غلا، يمكن رسايلي لك تتكرر، ويمكن كل يوم أقول لك نفس الكلام،
+    بس السبب بسيط جدًا: حبي لك كل يوم يكبر أكثر.
+    وجودك بحياتي شيء أنا ممتن له من قلبي، وأنتِ مو مجرد شخص أحبه،
+    أنتِ الإنسانة اللي أتمنى أشوفها معي في كل أيامي الجاية.
+    أبيك تعرفين إنك غالية علي بطريقة ما توصفها الكلمات،
+    وإن ابتسامتك تفرق معي، وصوتك يطمنّي، ووجودك لحاله يخلّي يومي أحلى.
+    ولو أقدر أخليك تشوفين نفسك بعيوني، بتعرفين قد إيش أنتِ جميلة ومميزة عندي.
+  </p>
 </section>
 
-<section class="final">
-<h2>وغلا… إذا سألتي محمد وش مكانك؟</h2>
-<p class="big">مكانك مو بين الناس… مكانك بقلبي، وفي مستقبلي، وفي كل أمنية أتمنى تتحقق. ❤️</p>
-<p>أنا ما أبي قصة حب مؤقتة، أبيك أنتِ في القصة كاملة: اليوم، وبكرة، وكل الأيام اللي بعدها.</p>
-<p class="big">أحبك يا غلا، وأشوفك أفضل حبيبة وأفضل زوجة وأفضل إنسانة في حياتي كلها. ❤️</p>
+<section class="card" style="text-align:center">
+  <h2>اختاري زر… هداج عنده كلام لك 🐈</h2>
+  <button onclick="showMsg('هداج يقول: غلا، ترى محمد يحبك حب مو طبيعي 😼🤍')">هداج يتكلم</button>
+  <button onclick="showMsg('فوزية تقول: لا تزعلين أبد، أنتِ أجمل قطة في قلب محمد 🐈‍⬛💗')">فوزية تتكلم</button>
+  <button onclick="showMsg('القطط كلها متفقة: غلا = أجمل إنسانة في الصفحة كلها 👑🤍')">سر الصفحة</button>
+  <div id="secret"></div>
 </section>
-<footer>صُنع بحب من محمد إلى غلا • 2026 ❤️</footer>
+
+<section class="card">
+  <h2>شيء أبيك تتذكرينه دائمًا 🌷</h2>
+  <p class="love">
+    مهما تغيرت الأيام، فيه شيء واحد ما أبيه يتغير:
+    إنك تعرفين مكانتك عندي. أنتِ غلا، والاسم لحاله صار مرتبط عندي
+    بالحب والراحة والابتسامة. أحبك اليوم، وبكرة، وكل يوم بطريقة أكبر.
+  </p>
+</section>
+
+<footer>صُنعت بحب من محمد إلى غلا 🤍 | 🐈 هداج وفوزية يراقبون الصفحة</footer>
 </main>
+
 <script>
-const box=document.getElementById('hearts');
-for(let i=0;i<28;i++){
- const h=document.createElement('div'); h.className='heart'; h.textContent=['❤️','💗','💕','🌸'][i%4];
- h.style.left=Math.random()*100+'%';
- h.style.animationDelay=(Math.random()*8)+'s';
- h.style.fontSize=(16+Math.random()*18)+'px';
- box.appendChild(h);
+function showMsg(text){
+ const box=document.getElementById("secret");
+ box.style.display="block";
+ box.textContent=text;
 }
-function showSecret(){document.getElementById('secret').style.display='block'}
 </script>
 </body>
 </html>
